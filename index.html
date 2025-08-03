@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Lab Uji Protein (Biuret)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Virtual Lab: Uji Protein (Biuret)</h1>
+
+    <label for="sampleSelect">Pilih Bahan Makanan:</label>
+    <select id="sampleSelect">
+      <option value="">-- Pilih Sampel --</option>
+      <option value="putih_telur">Putih Telur</option>
+      <option value="susu">Susu</option>
+      <option value="air_keran">Air Keran</option>
+      <option value="tepung">Tepung</option>
+      <option value="daging_ayam">Daging Ayam</option>
+    </select>
+
+    <div class="lab-area">
+      <img id="testTube" src="img/tabung_awal.png" alt="Tabung Reaksi" />
+    </div>
+    <div class="controls">
+      <button onclick="addReagent()">Tambahkan Reagen Biuret</button>
+      <button onclick="shakeTube()">Kocok Tabung</button>
+      <button onclick="showResult()">Lihat Hasil</button>
+    </div>
+    <div id="result"></div>
+    <p class="note">Catatan: Warna ungu menunjukkan adanya protein.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
